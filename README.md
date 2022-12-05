@@ -12,6 +12,7 @@ Complete Results for 2 Convolutional Layer Network:
 | Pruned Train Noise | 62   | 53   | 49   | 45   | 42   | 39   | 35   | 30   | 27   | 24   | 23   | 21   |
 | Pruned Input Noise | 57   | 60   | 60   | 60   | 59   | 57   | 55   | 50   | 45   | 41   | 37   | 34   |
 
+Complete Results for 4 Convolutional Layer Network:
 
 | Approach | Var(0)    | Var(0.05)    | Var(0.075)    | Var(0.1)    | Var(0.125)    | Var(0.15)    | Var(0.2)    | Var(0.3)    | Var(0.4)    | Var(0.5)    |
 | :---:   | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:|
@@ -20,3 +21,11 @@ Complete Results for 2 Convolutional Layer Network:
 | Pruned New Objective | 76| 48| 41| 36| 33| 30| 27| 22| 20| 18|
 | Pruned Train Noise |75| 44| 37| 32| 29| 27| 24| 20| 19| 17|
 | Pruned Input Noise |65| 69| 69| 69| 68| 67| 64| 58| 53| 48|
+
+Complete Results for ResNet18:
+
+| Approach | Var(0)    | Var(0.05)    | Var(0.075)    | Var(0.1)    | Var(0.125)    | Var(0.15)    | Var(0.2)    | Var(0.3)    |
+| :---:   | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Unpruned |83| 43| 36| 31| 28| 25| 23| 19|
+| Vanilla Pruned | 84| 33| 24| 19| 16| 15| 14| 14|
+| Pruned New Objective | 85| 44| 35| 30| 26| 24| 21| 19|
