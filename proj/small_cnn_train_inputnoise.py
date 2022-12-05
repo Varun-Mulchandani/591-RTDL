@@ -463,6 +463,29 @@ with torch.no_grad():
         for j in range(len(images)):
           torch.manual_seed(1)
           torch.cuda.manual_seed(1)
+          img = images[j] + (0**0.5)*torch.randn(3, 32, 32)
+          all_images.append(img)
+        images = torch.stack(all_images)
+
+        outputs = net(images)
+
+        _, predicted = torch.max(outputs.data, 1)
+        total += labels.size(0)
+        correct += (predicted == labels).sum().item()
+
+print(f'Accuracy of the network on the 10000 test images: {100 * correct // total} %')
+
+
+correct = 0
+total = 0
+
+with torch.no_grad():
+    for data in testloader:
+        images, labels = data
+        all_images = []
+        for j in range(len(images)):
+          torch.manual_seed(1)
+          torch.cuda.manual_seed(1)
           img = images[j] + (0.05**0.5)*torch.randn(3, 32, 32)
           all_images.append(img)
         images = torch.stack(all_images)
