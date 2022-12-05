@@ -1,6 +1,6 @@
 # 591-RTDL
 
-Code and Screenshots can be found in the 'proj' directory.
+Code and Result proofs can be found in the 'proj' directory.
 
 Result proofs can be viewed as screenshots in folders that end with 'SC'.
 
