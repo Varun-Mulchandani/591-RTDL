@@ -1,5 +1,7 @@
 # 591-RTDL
 
+Code and Screenshots can be found in the 'proj' directory.
+
 Result proofs can be viewed as screenshots in folders that end with 'SC'.
 
 Complete Results for 2 Convolutional Layer Network:
